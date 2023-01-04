@@ -1,0 +1,70 @@
+@import "./variables.scss";
+
+.movie {
+  box-shadow: $light-box-shadow;
+  width: 250px;
+  background-color: $purple;
+  margin: 1rem;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+
+  .posterImg {
+    width: 100%;
+    height: 250px;
+  }
+
+  .movieDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &:hover .overview{
+        transform: translateY(0%);
+    }
+    .box {
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h4{
+        width: 160px;
+        text-align: center;
+      }
+
+      p{
+        background-color: $dark-purple;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        box-shadow: inset 0 5px 5px rgba(0,0,0,0.5);
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+
+      }
+    }
+    .overview{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-height: 100%;
+        background-color: $light-blue;
+        opacity: 0.9;
+        box-sizing: border-box;
+        padding: 1rem;
+        transition: all 0.4s;
+        overflow-y: auto;
+        transform: translateY(101%);
+
+       
+    }
+  }
+}

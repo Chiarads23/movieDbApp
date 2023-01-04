@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+.MainInput{
+    display: flex;
+    position: fixed;
+    height: 40px;
+    top: 40px;
+    left: calc(50% - 150px);
+    z-index: 1;
+   
+
+    input{
+        width: 240px;
+        padding-left: 10px;
+        background: rgba(245, 245, 245, 0.8);
+        border: none;
+        outline: none;
+        border-radius: 10px 0 0 10px ;
+        box-shadow: $dark-box-shadow;
+    }
+    button {
+        border: none;
+        cursor: pointer;
+        width: 60px;
+        border-left: 1px solid $light-blue;
+        font-weight: bold;
+        color: $white;
+        background: #2052a2a2;
+        border-radius:  0  10px 10px 0;
+        box-shadow: $dark-box-shadow;
+        
+       
+    } button:hover{
+            border: 1px solid #00b1c983;
+            box-shadow: $light-box-shadow;
+        }
+}
