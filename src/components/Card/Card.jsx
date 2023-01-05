@@ -1,10 +1,13 @@
 import React from "react";
 import styles from '../../styles/Card.module.scss';
 
+
+
 const Card =(movie) => {
 
 
     const imgPath=' https://image.tmdb.org/t/p/w500';
+
     return (
         <div className={styles.movie}>
             <img className={styles.posterImg} src={imgPath+movie.info.poster_path} alt="" />

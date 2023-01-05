@@ -1,16 +1,16 @@
-import Main from './components/Main';
-import MainInput from "./components/MainInput/MainInput";
-
-import MovieEntity from "./components/MovieEntity/MovieEntity";
+import Home from "./components/Home";
+import Searched from './components/Searched';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
 function App() {
   return (
-    <div className="App">
-      <Main />
-      <MainInput />
-      <MovieEntity movieID="340" />
-    </div>
+ <BrowserRouter>
+ <Routes>
+  <Route path='/' element={<Home />}/>
+  <Route path='/searched/:search' element={<Searched />}/>
+ </Routes>
+ </BrowserRouter>
   );
 }
 

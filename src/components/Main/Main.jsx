@@ -1,5 +1,7 @@
 import React from "react";
+
 import { useState, useEffect } from "react";
+
 import logo from "../../assets/logo.png";
 import Card from "../Card";
 import styles from "../../styles/Main.module.scss";
@@ -41,19 +43,27 @@ const Main = () => {
     setUrl(url);
   }
 
+
   return (
     <div className={styles.Main}>
       <div className={styles.Header}>
         <div className={styles.logo}>
           <img className={styles.logoImg} src={logo} alt="" />
         </div>
-        <nav>
+        <nav className={styles.nabvar} > 
+          <a 
+          href="#" className={styles.toggleBtn}>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+          </a>
+          <div className={styles.navLinks}>
           <ul>
             {arr.map((value, id) => {
               return (
                 <li key={id}>
                   <a
-                  href="#"
+                  href="/"
                     key={id}
                     name={value}
                     onClick={(e) => {
@@ -65,7 +75,7 @@ const Main = () => {
                 </li>
               );
             })}
-          </ul>
+          </ul></div>
         </nav>
       </div>
       <div className={styles.CardBox}>

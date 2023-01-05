@@ -1,8 +1,10 @@
 @import "./variables.scss";
 
 .MovieEntity {
+  border-top: 2px inset hsla(0, 0%, 96%, 0.538);
+  margin-top: 20px;
+  padding-top: 30px;
   display: flex;
-  background: linear-gradient(90deg, $dark-blue 0%, $blue 50%,$dark-blue 100%);
 
   .MovieEntity__info {
     display: flex;
@@ -55,23 +57,27 @@
     display: flex;
     flex-direction: column-reverse;
 
-    .bookingBtn{
-        max-width: 200px;
-        cursor: pointer;
-        font-weight: bold;
-        padding: 10px ;
-        border: 1px solid #feb76682;
-        color: $white;
-        transform: translate(-100px, -120px);
-        background:linear-gradient(45deg, $blue 0%, $light-blue 50%, $purple 100%);
-        box-shadow: $dark-box-shadow;
-        border-radius: $border-radius;
-
-       
-    } .bookingBtn:hover{
-            border: 1px solid #00b1c983;
-            box-shadow: $light-box-shadow;
-        }
-      
+    .bookingBtn {
+      max-width: 200px;
+      cursor: pointer;
+      font-weight: bold;
+      padding: 10px;
+      border: 1px solid #feb76682;
+      color: $white;
+      transform: translate(-100px, -120px);
+      background: linear-gradient(
+        45deg,
+        $blue 0%,
+        $light-blue 50%,
+        $purple 100%
+      );
+      box-shadow: $dark-box-shadow;
+      border-radius: $border-radius;
+    }
+    
+    .bookingBtn:hover {
+      border: 1px solid #00b1c983;
+      box-shadow: $light-box-shadow;
+    }
   }
 }

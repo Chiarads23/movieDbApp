@@ -11,6 +11,5 @@ const GET = async(type, selection, ext= '') => {
 export {GET};
 
 
-// movie/popular?api_key=<<api_key>>&language=en-US&page=1
 
 
